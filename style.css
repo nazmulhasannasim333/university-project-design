@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.header{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #070606a6, #000000b5),url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+}
+nav img{
+  width: 170px;
+}
+.nav-link{
+  text-align: right;
+}
+.nav-link ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 7px 13px;
+}
+.nav-link ul li a{
+  text-decoration: none;
+  color: #f6eeee;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-link ul li::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #ffae00;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.text-box p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #cfcccc;
+  margin-bottom: 30px;
+}
+.primary-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  padding: 12px 14px ;
+  border: 1px solid #fff;
+  position: relative;
+  cursor: pointer;
+}
+.primary-btn:hover{
+  border: 1px solid #f78401;
+  background-color: #f78401;
+  transition: 0.5s;
+}
+nav .fa-solid{
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .text-box h1{
+    font-size: 20px;
+  }
+  .text-box p{
+    font-size: 12px;
+  }
+  .nav-link ul li{
+    display: block;
+  }
+  nav img{
+    width: 160px;
+    
+  }
+  .nav-link {
+    position: absolute;
+    background-color: #fb8907;
+    height: 100vh;
+    width: 150px;
+    text-align: left;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+
+  }
+  nav .fa-solid{
+    display: block;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .nav-link ul{
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+
+
